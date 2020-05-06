@@ -1,0 +1,14 @@
+.btn{
+    -fx-background-color:#F2F2F2;
+}
+.btn:hover{
+    -fx-background-color:#1E90FF;
+}
+.header{
+    -fx-border-style:hidden;
+    -fx-background-color: black;
+    -fx-border-width: 1px;
+}
+.text_day{
+    -fx-text-fill: black;
+}

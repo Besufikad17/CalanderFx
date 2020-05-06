@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="523.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="358.0" prefWidth="523.0" style="-fx-background-color: #F2F2F2;">
+         <children>
+            <AnchorPane layoutX="1.0" prefHeight="136.0" prefWidth="517.0" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="date" layoutX="219.0" layoutY="21.0" prefHeight="35.0" prefWidth="212.0" text="Current Date">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="52.0" layoutY="74.0" prefHeight="17.0" prefWidth="39.0" text="እሁድ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="112.0" layoutY="74.0" text="ሰኞ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="181.0" layoutY="74.0" text="ማግሰኞ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="247.0" layoutY="74.0" text="ረቡዕ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="316.0" layoutY="74.0" text="ሐሙስ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="384.0" layoutY="74.0" text="አርብ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="437.0" layoutY="74.0" text="ቅዳሜ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="previous" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" styleClass="btn" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" rotate="-178.8">
+                           <image>
+                              <Image url="@images/Expand%20Arrow_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="next" layoutX="80.0" layoutY="14.0" mnemonicParsing="false" styleClass="btn" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Expand%20Arrow_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <AnchorPane fx:id="day_parent" layoutX="32.0" layoutY="92.0" prefHeight="201.0" prefWidth="454.0" stylesheets="@style.css">
+                     <children>
+                        <Label fx:id="day1" layoutX="24.0" layoutY="36.0" prefHeight="17.0" styleClass="text_day" stylesheets="@style.css" text="11">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day2" layoutX="81.0" layoutY="35.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="12">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day8" layoutX="24.0" layoutY="80.0" prefHeight="17.0" styleClass="text_day" stylesheets="@style.css" text="18">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day9" layoutX="81.0" layoutY="79.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="19">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day10" layoutX="152.0" layoutY="79.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="20">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day11" layoutX="220.0" layoutY="79.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="21">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day12" layoutX="283.0" layoutY="79.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="22">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day13" layoutX="351.0" layoutY="77.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="23">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day14" layoutX="406.0" layoutY="77.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="24">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day3" layoutX="152.0" layoutY="35.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="13">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day4" layoutX="217.0" layoutY="37.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="14">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day5" layoutX="285.0" layoutY="36.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="15">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day6" layoutX="351.0" layoutY="37.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="16">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day7" layoutX="406.0" layoutY="37.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="17">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day15" layoutX="24.0" layoutY="122.0" prefHeight="17.0" styleClass="text_day" stylesheets="@style.css" text="25">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day16" layoutX="81.0" layoutY="121.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="26">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day17" layoutX="152.0" layoutY="121.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="27">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day18" layoutX="220.0" layoutY="121.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="28">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day19" layoutX="283.0" layoutY="121.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="29">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day20" layoutX="351.0" layoutY="121.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="30">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day21" layoutX="406.0" layoutY="121.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day22" layoutX="24.0" layoutY="165.0" prefHeight="17.0" styleClass="text_day" stylesheets="@style.css" text="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day23" layoutX="81.0" layoutY="164.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day24" layoutX="152.0" layoutY="164.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day25" layoutX="220.0" layoutY="164.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="5">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day26" layoutX="283.0" layoutY="164.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="6">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day27" layoutX="351.0" layoutY="164.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="7">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="day28" layoutX="406.0" layoutY="164.0" prefHeight="20.0" styleClass="text_day" stylesheets="@style.css" text="8">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Label fx:id="holiday" layoutX="58.0" layoutY="315.0" prefHeight="16.0" prefWidth="112.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
