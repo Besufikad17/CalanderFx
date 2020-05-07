@@ -91,16 +91,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         //Initial setup
         date.setText(getCurrentDate());
-        etDateTime etd = new etDateTime().now();
-        int day = etd.getDay();
-        Label[] days = getDays();
-        for (int i = 0;i<days.length;i++){
-            int value = Integer.parseInt(days[i].getText());
-            if (value == day){
-                days[i].setStyle("-fx-text-fill:blue;");
-            }
-        }
-
+       
         String mon = date.getText().substring(0, date.getText().indexOf(" "));
         int year = Integer.parseInt(date.getText().substring(date.getText().lastIndexOf(" ")).replace(" ",""));
         if (getHolidaysMap().get(mon) != null) {
@@ -253,6 +244,8 @@ public class Controller implements Initializable {
 
     private void highlightdays(Collection<Integer> day,String month,int year) {
         Label[] days = getDays();
+        etDateTime now = etDateTime().now();
+        int current_day = now.getDay();
         for (Label l : days) {
             l.setStyle(null);
         }
@@ -266,6 +259,10 @@ public class Controller implements Initializable {
                             "-fx-background-radius: 3px;");
                     int finalCount = Integer.parseInt(days[i].getText());
                     days[i].setOnMouseClicked(mouseEvent -> display(finalCount,month,year));
+                }else if(days[i].getText().equals(String.valueOf(current_day))){
+                    days[i].setStyle("-fx-background-color: white;\n" +
+                            "-fx-text-fill: #1E90FF;\n" +
+                            "-fx-borde-color:#1E90FF;\n");
                 }
 
             }
